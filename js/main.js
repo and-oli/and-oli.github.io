@@ -135,12 +135,16 @@
     $('.navbar-it').each(function () {
       var currentLink = $(this);
       var refElement = $(currentLink.attr("href"));
-      if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-        $('.navbar-it').removeClass("active");
-        currentLink.addClass("active");
+      if (refElement.position()&& refElement.position()) {
+        if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+          $('.navbar-it').removeClass("active");
+          currentLink.addClass("active");
+        }
+        else{
+          currentLink.removeClass("active");
+        }
       }
-      else{
-        currentLink.removeClass("active");
-      }
+
     });
   }
+
