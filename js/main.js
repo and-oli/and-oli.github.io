@@ -1,11 +1,7 @@
 
   "use strict";
 
-  $(window).on("load", function() { // makes sure the whole site is loaded
-    //preloader
-    $("#status").fadeOut(); // will first fade out the loading animation
-    $("#preloader").delay(450).fadeOut("slow"); // will fade out the white DIV that covers the website.
-  });
+
 
   $(document).ready(function(){
 
@@ -32,26 +28,10 @@
     });
 
 
-    //scroll js
-    smoothScroll.init({
-      selector: '[data-scroll]', // Selector for links (must be a valid CSS selector)
-      selectorHeader: '[data-scroll-header]', // Selector for fixed headers (must be a valid CSS selector)
-      speed: 500, // Integer. How fast to complete the scroll in milliseconds
-      easing: 'easeInOutCubic', // Easing pattern to use
-      updateURL: true, // Boolean. Whether or not to update the URL with the anchor hash on scroll
-      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
-      callback: function ( toggle, anchor ) {} // Function to run after scrolling
-    });
-
-    //menu
-    var bodyEl = document.body,
-    content = document.querySelector( '.content-wrap' ),
-    openbtn = document.getElementById( 'open-button' ),
-    closebtn = document.getElementById( 'close-button' ),
-    isOpen = false;
 
 
 
+//Animación del cuadro de introducción
     function intervaloGranPollo(){
       $(".fadeIn1").text("¡Hola!")
       .animate({opacity:1},1500,function(){
@@ -83,14 +63,13 @@
     //owl carousel
     var owl = $('.owl-carousel');
     owl.owlCarousel({
-      autoPlay: false, //Set AutoPlay to 3 seconds
+      autoPlay: false,
       items : 1,
       itemsDesktop : [1199,1],
       itemsDesktopSmall : [979,1],
       itemsTablet : [768,1],
       itemsMobile : [479,1],
       nav:false,
-      // CSS Styles
       baseClass : "owl-carousel",
       theme : "owl-theme"
     });
@@ -104,13 +83,12 @@
 
     var owl2 =$('.owl-carousel2');
     owl2.owlCarousel({
-      autoPlay: false, //Set AutoPlay to 3 seconds
+      autoPlay: false,
       items : 1,
       itemsDesktop : [1199,1],
       itemsDesktopSmall : [979,1],
       itemsTablet : [768,1],
       itemsMobile : [479,1],
-      // CSS Styles
       baseClass : "owl-carousel",
       theme : "owl-theme"
     });
@@ -122,10 +100,10 @@
     });
 
 
-    //contact
+    //contacto
     $('input').blur(function() {
 
-      // check if the input has any value (if we've typed into it)
+      // Revisar si hay valores
       if ($(this).val())
       $(this).addClass('used');
       else
@@ -134,7 +112,7 @@
 
 
 
-    //Skill
+    //Habilidades
     $('.skillbar').each(function() {
       $(this).appear(function() {
         $(this).find('.count-bar').animate({
@@ -154,11 +132,11 @@
   //nav-active
   function onScroll(event){
     var scrollPosition = $(document).scrollTop();
-    $('.menu-list a').each(function () {
+    $('.navbar-it').each(function () {
       var currentLink = $(this);
       var refElement = $(currentLink.attr("href"));
       if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-        $('.menu-list a').removeClass("active");
+        $('.navbar-it').removeClass("active");
         currentLink.addClass("active");
       }
       else{
