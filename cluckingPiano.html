@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cluck piano by Andrés Olivares</title>
+  <script type="text/javascript" src="js/paper-full.js"></script>
+  <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.7/howler.js"></script>
+  <link rel="stylesheet" href="css/cluck.css">
+  <link href="images/icon.png" rel="shortcut icon">
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+  <script type="text/paperscript" canvas = "myCanvas" src = "js/cluck.js">
+  </script>
+</head>
+<body>
+
+    <canvas id="myCanvas" rezise>
+
+    </canvas>
+  <div class="container text-center">
+    <h1 class = "titulo"> Cluck Piano por Andrés Olivares</h1>
+    <h2 class = "subtitulo">Utiliza las teclas: {d,r,f,t,g,h,u,j,i,k,o,l} para usar el piano</h2>
+    <h3 class = "descripcion"> <span id = "numero">0</span> <span id = "teclas">.Misión imposible: h h i o h h t g h h i o h h t g h</span></h3>
+
+      <button type="button" class="btn btn-primary" id = "boton-next">Next</button>
+    <div class="row">
+        <ul>
+          <li class="white" id = "do"></li>
+          <li class="black" id = "dos"></li>
+          <li class="white" id = "re"></li>
+          <li class="black" id = "res"></li>
+          <li class="white" id = "mi"></li>
+          <li class="white" id = "fa"></li>
+          <li class="black" id = "fas"></li>
+          <li class="white" id = "sol"></li>
+          <li class="black" id = "sols"></li>
+          <li class="white" id = "la"></li>
+          <li class="black" id = "las"></li>
+          <li class="white" id = "si"></li>
+        </ul>
+    </div>
+  </div>
+<img class="pollo" src="images/icon.png">
+
+    <canvas id="myCanvas" >
+
+    </canvas>
+</body>
+</html>
