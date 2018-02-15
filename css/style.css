@@ -1,3 +1,4 @@
+/*----------------------------------------- 1) Tags generales --------------------------------------------------*/
 
 body,
 html {
@@ -34,34 +35,9 @@ img { max-width: 100%; }
   outline: none;
 }
 
-/*----------------------------------------- 2) Preloader --------------------------------------------------*/
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-  z-index: 999999;
-}
-#status {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background-image: url(../images/loader.gif);
-  background-repeat: no-repeat;
-  background-position: center center;
-  text-align: center;
-  margin: -40px 0 0 -100px;
-}
-#status img {
-  text-align: center;
-  margin-top: -80px;
-}
 
-/*----------------------------------------- 3) Helper --------------------------------------------------*/
+
+/*----------------------------------------- 2) clases comunes --------------------------------------------------*/
 .no-pad {padding: 0 !important; margin: 0 !important;}
 .pad-80 {padding-top: 80px;}
 .mar-t-50{margin-top: 50px !important;}
@@ -126,9 +102,9 @@ hr {
   border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-/*----- background ------*/
+/*----- Fondos de paneles ------*/
 .bg1 {
-  background: url('https://images.unsplash.com/photo-1477075566660-2cdda96f2a6c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5be5e68aaab090bc28a62194c0be13d3&auto=format&fit=crop&w=1868&q=80');
+  background: url('../images/bg1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 120px 0;
@@ -136,7 +112,7 @@ hr {
   background-position: 0 -400px;
 }
 .bg2 {
-  background: url('https://images.unsplash.com/photo-1511745604865-bfc13388a4f9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c7d0671e237fbb5c157dfba49c75262d&auto=format&fit=crop&w=1900&q=80');
+  background: url('../images/bg2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 120px 0;
@@ -177,7 +153,7 @@ hr {
   margin: 0;
 }
 
-/*----------------------------------------- 4) Header --------------------------------------------------*/
+/*----------------------------------------- 3) Navbar --------------------------------------------------*/
 .header {
   width: 100%;
   z-index: 9999;
@@ -263,7 +239,7 @@ hr {
 }
 
 
-/*----------------------------------------- 5) Typography --------------------------------------------------*/
+/*----------------------------------------- 4) Typography --------------------------------------------------*/
 h1,
 h2,
 h3,
@@ -320,9 +296,9 @@ p {
   font-weight: 400;
 }
 
-/*----------------------------------------- 6) Hero --------------------------------------------------*/
+/*----------------------------------------- 5) home y about --------------------------------------------------*/
 #home {
-  background: url('https://wallpaperclicker.com/storage/wallpaper/graffiti-colors-background-wallpaper-71151344.jpg');
+  background: url('../images/bghome.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -373,7 +349,7 @@ p {
 
 
 
-/*----------------------------------------- 7) Sections --------------------------------------------------*/
+/*----------------------------------------- 6) Secciones--------------------------------------------------*/
 /*---------- a. portfolio -----------*/
 ul.portfolio-image {
   width: 50%;
@@ -460,7 +436,7 @@ ul.portfolio-image li .desc{
   font-weight: 700;
 }
 
-/*---------- c. experience -----------*/
+/*---------- b. experiencia -----------*/
 .wrap-card {
   position: relative;
   box-shadow: 0px 0px 0px #818181;
@@ -529,7 +505,7 @@ ul.portfolio-image li .desc{
 .card:hover:before {
   -webkit-transform: scaleY(1);
 }
-/*---------- d. hobbies -----------*/
+/*---------- c. hobbies -----------*/
 
 .hobbie{
   min-height: 400px;
@@ -613,7 +589,7 @@ ul.portfolio-image li .desc{
 
 
 
-/*---------- f. quote -----------*/
+/*---------- d. about -----------*/
 #about{
   min-height: 650px;
   display: inline-block;
@@ -631,34 +607,12 @@ ul.portfolio-image li .desc{
   transition: 1s ease;
   cursor: pointer;
 }
-.bg-about2 {
-  background: url('https://images.unsplash.com/photo-1511394829526-5c55e8e024bf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e0fe012c842304aa9b3855831bc9d678&auto=format&fit=crop&w=333&q=80');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 660px;
-  width: 100%;
-  height: 100%;
-  transition: 1s ease;
-  cursor: pointer;
-}
+
 .bg-about:hover {
-  background: url('https://images.unsplash.com/photo-1504712964884-553234860e2d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2f8546b44e11beff7fc5d7062448aaf7&auto=format&fit=crop&w=1050&q=80');
+  background: url('../images/bgaboutc.jpg');
   border-radius: 50%;
 }
-.bg-about2 {
-  background: url('../images/perfil.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 660px;
-  height: 100%;
-  transition: 1s ease;
-  cursor: pointer;
-  float: left;
-}
+
 .wrap-about {
   height: 100%;
   width: 100%;
@@ -698,7 +652,7 @@ ul.portfolio-image li .desc{
 }
 
 
-/*---------- g. contact -----------*/
+/*---------- e. contacto -----------*/
 #contact {padding: 120px 0 200px 0;}
 #contact form {
   margin-top: 25px;
@@ -838,7 +792,7 @@ ul.portfolio-image li .desc{
     background: transparent;
   }
 }
-/*-------------- h. footer ------------------*/
+/*-------------- f. footer ------------------*/
 .footer-top{
   width: 100%;
   text-align: center;
@@ -939,7 +893,7 @@ ul.portfolio-image li .desc{
 }
 
 
-/*----------------------------------------- 8) Component --------------------------------------------------*/
+/*----------------------------------------- 7) Component --------------------------------------------------*/
 /*---------------- a. Skills ----------------*/
 .skillst {margin-top: 30px;}
 .skillst .skillbar {
