@@ -212,12 +212,13 @@ hr {
   line-height: 20px;
 }
 
-.nav>li>a.navbar-it:active, .nav>li>a.navbar-it:hover
+.nav>li>a.navbar-it.active, .nav>li>a.navbar-it:hover
 {
-
-  color:#c7d856;
-  text-decoration: overline;
+    color:#c7d856;
+    text-decoration: overline;
 }
+
+
 .logo-nav {
   padding: 6px 0 10px 0;
   -webkit-transition: all 0.3s;
