@@ -1,5 +1,6 @@
 /*----------------------------------------- 1) Tags generales --------------------------------------------------*/
 
+/* Si usa vlaores 0px se puede dejar el 0 solo  */
 body,
 html {
   left: 0;
@@ -38,6 +39,8 @@ img { max-width: 100%; }
 
 
 /*----------------------------------------- 2) clases comunes --------------------------------------------------*/
+
+/* Es mejor crear clases mas especificas o id's antes de usar !important porque puede dar problemas despues  */
 .no-pad {padding: 0 !important; margin: 0 !important;}
 .pad-80 {padding-top: 80px;}
 .mar-t-50{margin-top: 50px !important;}
@@ -765,6 +768,8 @@ ul.portfolio-image li .desc{
   background: #2b2b2b;
   color: #ffffff;
 }
+
+/* Seria bueno tener esto en un css aparte o al final para mejorar la organización */
 @-webkit-keyframes inputHighlighter {
   from {
     background: #5264AE;
@@ -911,6 +916,8 @@ ul.portfolio-image li .desc{
   width: 0px;
   position: relative;
 }
+
+/* Es mejor evitar usar el !important a menos que sea totalmente necesario */
 .skillst .count-bar {background-color: #818181;}
 .skillst .count-bar span{ font-size: 12px;}
 .skillst .title {

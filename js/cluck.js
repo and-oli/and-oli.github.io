@@ -1,5 +1,7 @@
 "use strict";
 //Objeto con las transformaciones del sonido de la gallina
+
+// Se puede mejorar en la indentación
 var data = {
   l: {sound: new Howl({
     src: ['sound/cluck6.mp3'],
@@ -151,6 +153,8 @@ $('#si').click(function(){
 
 });
 //Cambia la canción actual
+
+// Se puede mejorar la indentación
 function callback(data, filter) {
   var num = parseInt($('#numero').text());
   num = (num==10)?1:(num+1);
