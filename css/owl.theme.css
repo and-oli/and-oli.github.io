@@ -1,5 +1,5 @@
 /*
-* 	Owl Carousel Owl Demo Theme 
+* 	Owl Carousel Owl Demo Theme
 *	v1.3.3
 */
 
@@ -13,6 +13,7 @@
 
 /* Styling Next and Prev buttons */
 
+/* *display no existe */
 .owl-theme .owl-controls .owl-buttons div{
 	color: #FFF;
 	display: inline-block;
