@@ -596,22 +596,23 @@ ul.portfolio-image li .desc{
   width: 100%;
 }
 .bg-about {
-  background: url('../images/perfil.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-image: url('../images/perfil.jpg');
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   min-height: 660px;
   width: 100%;
   height: 100%;
-  transition: 1s ease;
+  transition: background-image 1s ease;
+  image-orientation: from-image;
+
   cursor: pointer;
 }
 
 .bg-about:hover {
-  background: url('https://images.unsplash.com/photo-1504712964884-553234860e2d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2f8546b44e11beff7fc5d7062448aaf7&auto=format&fit=crop&w=1050&q=80');
-  border-radius: 50%;
-}
+  background-image: url('../images/perfil2m.png');
+  }
 
 .wrap-about {
   height: 100%;
