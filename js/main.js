@@ -33,10 +33,10 @@
 
 //Animación del cuadro de introducción
     function intervaloGranPollo(){
-      $(".fadeIn1").text("¡Hola!")
+      $(".fadeIn1").text("Hi!")
       .animate({opacity:1},1500,function(){
         $(".fadeIn1").animate({opacity:0},function(){
-          $(this).text("Bienvenido")
+          $(this).text("Welcome")
           .animate({opacity:1},1500,function(){
             $(".fadeIn1").animate({opacity:0},function(){
               $("#gran-pollo")
@@ -147,4 +147,3 @@
 
     });
   }
-
