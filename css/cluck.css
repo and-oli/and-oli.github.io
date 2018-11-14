@@ -9,13 +9,13 @@ canvas{
 body{
   background: #333333;
   background: -webkit-linear-gradient(to right, #dd1818, #333333);
-  background: linear-gradient(to right, #dd1818, #333333); 
-  overflow: hidden
+  background: linear-gradient(to right, #dd1818, #333333);
 }
 * { box-sizing:border-box; }
 
 ul {
-	height:18.875em; width:34em;
+	height:18.875em;
+  width: 80%;
   margin:5em auto; padding:3em 0 0 3em; position:relative;
   text-align: center;
 }
