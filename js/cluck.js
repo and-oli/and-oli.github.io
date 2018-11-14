@@ -36,7 +36,7 @@ var data = {
   },
   6: {
     sound: new Howl({src: ['sound/cluckm4.mp3']}),
-    id :'#soslm'
+    id :'#solsm'
   },
   y: {
     sound: new Howl({src: ['sound/cluckm3.mp3']}),
@@ -137,7 +137,7 @@ $('#dosm').click(function(){
   data['2'].sound.play();
 
 });
-$('#res').click(function(){
+$('#rem').click(function(){
   data['w'].sound.play();
 
 });
