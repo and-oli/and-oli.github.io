@@ -741,7 +741,6 @@
                         <script>
                         function send(e){
                           e.preventDefault();
-                          alert("kejejeje");
                         let emailjsUserId = "user_wUcsBviJHfQ5DqtCCuDh5",emailjsAccessToken= "b095845bc765a9f712e9f9d190c1a228", emailjsTemplateId = "personalsite",emailjsServiceId="gmail" ;
                         let mailName = document.getElementById("mailName").value;
                         let mailEmail = document.getElementById("mailEmail").value;
@@ -760,6 +759,7 @@
                             contentType: 'application/json'
                         }).then((res)=> {
                           alert("Message sent!");
+                          location="/";
                         }).catch((error)=> {
                           console.error(error);
 
