@@ -604,7 +604,7 @@ ul.portfolio-image li .desc{
   width: 100%;
 }
 .bg-about {
-  background-image: url('../images/perfil.jpg');
+  background-image: url('../images/perfil2m.png');
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -619,7 +619,7 @@ ul.portfolio-image li .desc{
 }
 
 .bg-about:hover {
-  background-image: url('../images/perfil2m.png');
+  background-image: url('../images/perfil.jpg');
   }
 
 .wrap-about {
